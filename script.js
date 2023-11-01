@@ -4,7 +4,7 @@ int n=arr.length;
 let non_article=[];
 for(int i=0;i<n;i++){
 	let str=arr[i];
-	str=str.replace(/\bthe\b|\bthe\b|\bthe\b/gi,"");
+	str=str.replace(/\bthe\b|\ban\b|\ba\b/gi,"");
 	str=str.trim();
 	non_article.push(str);
 	
