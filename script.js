@@ -10,6 +10,13 @@ for(let i=0;i<n;i++){
 	
 }
 non_article.sort();
-let names=document.getElementsByTagName('UL')[0];
-names.getElementsByTagName("li")[0].inner HTML=non_article;
+let ul=doucment.createElement('ul');
+ul.setAttribute("id","band");
+document.body.appendChild(ul);
+for(let i=0;i<non_article.length;i++){
+	let li=document.createElement('li');
+	ul.appeendChild(li);
+	li.innerHTML+=non_article[i];
+}
+
 console.log(non_article);
